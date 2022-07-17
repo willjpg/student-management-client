@@ -12,3 +12,11 @@ export const CREATE_STUDENT = gql`
     }
 `;
 
+export const DELETE_STUDENT = gql`
+    mutation deleteStudent($id: ID!){
+        deleteStudent(id: $id) {
+            message
+        }
+    }
+`;
+
