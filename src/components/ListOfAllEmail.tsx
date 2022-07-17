@@ -11,7 +11,7 @@ function AllEmail() {
             {data && data.getAllStudents.map((student: any) => {
 
                 return (
-                    <div className='w-[220px] h-[28px] bg-gray-200 -lg mt-2  pl-2'>
+                    <div className='list'>
 
                         <div className=''>{student.email}
                         </div>

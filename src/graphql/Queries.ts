@@ -10,3 +10,14 @@ export const GET_ALL_STUDENTS = gql`
         }
     }
 `;
+
+export const GET_BY_NAME = gql`
+    query getByName($name: String!){
+        getByName (name: $name) {
+            id
+            name
+            email
+            cpf
+        }
+    }
+`;

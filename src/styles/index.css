@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input{
+  @apply
+  border border-gray-200 max-h-10 m-2 rounded-md pl-3
+  hover:bg-slate-300 transition-colors
+  ;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  @apply bg-gray-400;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded;
+}
+
+
+.list{
+  @apply w-[220px] h-[28px] bg-gray-100 mt-2  pl-2;
+}

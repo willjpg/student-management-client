@@ -11,7 +11,7 @@ function ListOfAllStudents() {
             {data && data.getAllStudents.map((student: any) => {
 
                 return (
-                    <div className='w-[220px] h-[28px] bg-gray-200 rounded-bl-lg mt-2  pl-2'>
+                    <div className='list rounded-bl-lg'>
                         <div >
                             {student.name}
                         </div>

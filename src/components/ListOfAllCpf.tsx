@@ -1,18 +1,18 @@
 import { useQuery, useMutation } from '@apollo/client'
-import React from 'react'
+import React, { useReducer } from 'react'
 import { GET_ALL_STUDENTS } from '../graphql/Queries'
 import { DELETE_STUDENT } from '../graphql/Mutations'
 import { UserMinus } from 'phosphor-react'
 
 
-
+function refreshPage(){      window.parent.location = window.parent.location.href; } 
 
 function AllCpf() {
 
   const { data } = useQuery(GET_ALL_STUDENTS)
+  const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
 
-
-  const [deleteStudent, { error }] = useMutation(DELETE_STUDENT);
+  const [deleteStudent, {error }] = useMutation(DELETE_STUDENT);
 
 
 
@@ -20,9 +20,9 @@ function AllCpf() {
   return (
     <div className=''>
       {data && data.getAllStudents.map((student: any) => {
-
+        
         return (
-          <div className='w-[220px] h-[28px] items-stretch rounded-r-md bg-gray-200 -lg mt-2  pl-2'>
+          <div className='list rounded-r-md'>
 
             <div className='justify-between flex'>
               {student.cpf}
