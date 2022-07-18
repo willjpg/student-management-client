@@ -36,7 +36,7 @@ Veja o rascunho do site pelo [Figma](https://www.figma.com/file/oryHxvq6OvgX7ZuE
 
 Ainda há ajustes a serem feitos e recursos a serem desenvolvidos.
 
-Antes de Rodar a Aplicação é nessesário que o [Back-end](https://github.com/willjpg/student-management-server#run) da aplicação estaja rodando na porta http://localhost:3001
+Antes de Rodar a Aplicação é nessesário que o [Back-end](https://github.com/willjpg/student-management-server#run) da aplicação esteja rodando na porta http://localhost:3001
 
 
 
