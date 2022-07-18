@@ -29,7 +29,7 @@ function AllCpf() {
                
                 <button className='bg-red-700 pl-2 pr-2 rounded-r-md border-l-2 border-white text-gray-100 hover:bg-red-900 transition-colors'
                   onClick={() => {
-                    deleteStudent({ variables: { id: student.id } });
+                    deleteStudent({ variables: { id: student.id } }),window.location.reload();
                   }}
                 >
                   <UserMinus size={28} />
