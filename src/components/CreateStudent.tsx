@@ -1,10 +1,7 @@
 import { useMutation } from '@apollo/client';
 import { UserPlus } from 'phosphor-react';
 import React, { FormEvent, useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
 import { CREATE_STUDENT } from '../graphql/Mutations';
-import { Logo } from './Logo';
-
 function CreateStudent() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
