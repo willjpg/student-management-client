@@ -3,6 +3,8 @@ import { useLazyQuery } from "@apollo/client";
 import { MagnifyingGlass, PaperPlaneRight } from "phosphor-react";
 import { GET_BY_NAME } from "../graphql/Queries";
 
+
+
 function SearchBar() {
   const [searchStudent, { data }] = useLazyQuery(GET_BY_NAME)
   const [name, setName] = useState("");
@@ -32,7 +34,7 @@ function SearchBar() {
           <MagnifyingGlass size={28} />
         </div>
         <input
-          className=" w-[600px] border-white pr-1 hover:bg-white"
+          className=" w-[600px] border-white outline-none pr-1 hover:bg-white"
           placeholder='Pesquisar aluno...'
           type="search"
           onChange={(event) => {
@@ -44,7 +46,7 @@ function SearchBar() {
         </button>
       </form>
 
-      <div className="overflow-auto max-h-[110px] mt-1">
+      <div className="overflow-auto h-[110px] max-h-[110px] mt-1">
         {data && data.getByName.map((student: any) => {
           return (
 

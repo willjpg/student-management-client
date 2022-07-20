@@ -1,7 +1,10 @@
 import { useMutation } from '@apollo/client';
 import { UserPlus } from 'phosphor-react';
-import React, { FormEvent, useEffect, useState } from 'react'
+import React, { FormEvent, useState } from 'react'
 import { CREATE_STUDENT } from '../graphql/Mutations';
+
+
+
 function CreateStudent() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -29,7 +32,7 @@ function CreateStudent() {
 
   return (
 
-    <div className='flex justify-center items-center mt-5 flex-col'>
+    <div className='flex justify-center items-center mt-3 flex-col'>
 
       <div>
         <h2 className='font-bold text-xl'>Adicionar Aluno</h2>
@@ -37,7 +40,7 @@ function CreateStudent() {
 
       <form className='flex ml-6' onSubmit={handleStudent}>
         <input
-          placeholder='nome'
+          placeholder='Nome'
           type="text"
           onChange={(event) => {
             setName(event.target.value);
@@ -45,7 +48,7 @@ function CreateStudent() {
         />
 
         <input
-          placeholder='e-mail'
+          placeholder='E-mail'
           type="email"
           onChange={(event) => {
             setEmail(event.target.value);
@@ -53,8 +56,9 @@ function CreateStudent() {
         />
 
         <input
-          placeholder='cpf'
+          placeholder='CPF'
           type="text"
+          pattern="\d{3}.\d{3}.\d{3}-\d{2}"
           onChange={(event) => {
             setCpf(event.target.value);
           }}

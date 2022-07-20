@@ -3,6 +3,8 @@ import ListOfAllStudents from "../components/ListOfAllStudents";
 import { Logo } from "../components/Logo";
 import SearchBar from "../components/SearchBar";
 
+
+
 export function Home() {
 
 
