@@ -26,7 +26,7 @@ Uma plataforma de controle de estudantes.
 
 
 Criado para controlar os dados dos estudantes, com funções de editar informações que constam no banco de dados,
-pesquisar por nome, e-mail ou cpf e também registar novos alunos.  
+pesquisar por Nome, E-mail ou CPF e também registar novos alunos.  
 
 Veja o rascunho do site pelo [Figma](https://www.figma.com/file/oryHxvq6OvgX7ZuEK8goF7/Untitled?node-id=0%3A1).
 
@@ -46,7 +46,7 @@ Antes de Rodar a Aplicação é nessesário que o [Back-end](https://github.com/
 
 ### Desktop:
 <section  align="center">
-    <img height="550px" alt="My Event website overview" src="https://i.imgur.com/zJZUESN.png"/>
+    <img alt="My Event website overview" src="https://i.imgur.com/zJZUESN.png"/>
     
 </section>
 
