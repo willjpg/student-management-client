@@ -6,5 +6,13 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  colors: {
+    green: {
+      300: '#00B37E',
+      400: '#00E88F',
+      500: '#00875F',
+      700: '#015F43',
+    },
+    plugins: [],
+  }
 }

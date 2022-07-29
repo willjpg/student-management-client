@@ -41,7 +41,7 @@ function SearchBar() {
             setName(event.target.value);
           }}
         />
-        <button className="bg-green-500 rounded-r-full text-white pl-2 pr-2 hover:bg-slate-800 transition-colors">
+        <button className="bg-green-400 rounded-r-full text-white pl-2 pr-2 hover:bg-slate-800 transition-colors">
           <PaperPlaneRight size={28} />
         </button>
       </form>

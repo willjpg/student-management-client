@@ -65,7 +65,7 @@ function CreateStudent() {
         />
 
         <button
-          className='text-white w-16 text-2xl h-8 mt-2 mb-2 pl-4 rounded-md  bg-green-500 hover:bg-gray-700 transition-colors'
+          className='text-white w-16 text-2xl h-8 mt-2 mb-2 pl-4 rounded-md  bg-green-400 hover:bg-gray-700 transition-colors'
 
         >
           <UserPlus size={32} />

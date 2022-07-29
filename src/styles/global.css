@@ -5,7 +5,7 @@
 input{
   @apply
   border border-gray-200 max-h-10 m-2 rounded-md pl-3
-  hover:bg-slate-300 transition-colors
+  hover:bg-slate-300 transition-colors outline-green-400 outline-1
   ;
 }
 ::-webkit-scrollbar{
@@ -20,5 +20,5 @@ input{
 
 
 .list{
-  @apply w-[220px] h-[28px] bg-gray-100 mt-2  pl-2;
+  @apply w-[220px] h-[28px] bg-gray-100 mt-2  pl-2 hover:bg-slate-200 transition-colors;
 }
